@@ -1,8 +1,8 @@
 function calcu() {
-  let name = document.getElementById("name");
-  let salary = +document.getElementById("salary");
-  let number = +document.getElementById("number");
-  let total = salary - 4600000 - (number * 1600000);
+  let name = document.getElementById("name").value;
+  let salary = +document.getElementById("salary").value;
+  let number = +document.getElementById("number").value;
+  let total = salary - 4600000 - number * 1600000;
   let tienthue = pay(total, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35);
   display(tienthue);
 }
@@ -49,5 +49,6 @@ function pay(total, price1, price2, price3, price4, price5, price6, price7) {
   return tienthue;
 }
 function display(tienthue) {
-  document.getElementById("output").innerHTML = tienthue;
+  document.getElementById("output").innerHTML =
+    "Số tiền thuế của bạn là:" + tienthue;
 }

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="m-4">
+        <label class="fw-bold bg-success text-light">Chọn loại khách hàng</label>
+        <ul >
+            <li class="type">
+              <input type="radio" name="selector" id="nhadan" />
+              <label for="nhà dân" class="fw-bolder">Nhà dân</label>
+              <div class="check"></div>
+            </li>
+
+            <li class="type">
+              <input type="radio" name="selector" id="doanhnghiep">
+              <label for="doanh nghiệp" class="fw-bolder">Doanh nghiệp</label>
+              <div class="check"></div>
+            </li>
+          </ul>
+        <input id="service" type="text" placeholder="Nhập mã khách hàng" class="m-3">
+        <input id="number" type="text" placeholder="Số kênh cao cấp" class="m-3">
+        <input id="connect" type="text" placeholder="Số kết nối" class="m-3" >
+    </div>
+    <button class="btn btn-primary mx-4" onclick="calcu()">Tính tiền cáp</button>
+    <div class="alert alert-success" role="alert">
+        👉<span id="output"></span>
+      </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+    <script src="../BT4/main.js"></script>          
+</body>
+
+</html>

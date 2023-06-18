@@ -15,12 +15,14 @@
 
 <body>
     <div class="m-4">
-        <input type="text" class="d-sm-inline p-1 form m-2" placeholder="Nhập họ tên" id="name">
-        <input type="text" class="d-sm-inline p-1 form m-2" placeholder="Tổng thu nhập năm" id="salary">
-        <input type="text" class="d-sm-inline p-1 form m-2" placeholder="Số người phụ thuộc" id="number">
+        <input type="text" class="d-sm-inline p-1 form m-2 form-control" placeholder="Nhập họ tên" id="name">
+        <input type="text" class="d-sm-inline p-1 form m-2 form-control" placeholder="Tổng thu nhập năm" id="salary">
+        <input type="text" class="d-sm-inline p-1 form m-2 form-control" placeholder="Số người phụ thuộc" id="number">
     </div>
     <button class="btn btn-primary mx-4" onclick="calcu()">Tính tiền thuế</button>
-    <div class="bg-gradient" id="output"></div>
+    <div class="alert alert-success" role="alert">
+      👉<span id="output"></span>
+    </div>
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

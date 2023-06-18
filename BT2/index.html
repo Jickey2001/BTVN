@@ -15,11 +15,13 @@
 
 <body>
   <div class="m-4">
-    <input id="name" type="text"id="" placeholder="Nhập họ tên" class="m-3">
-    <input id="kw" type="text" placeholder="Nhập số kw">
+    <input id="name" type="text"id="" placeholder="Nhập họ tên" class="m-2 form-control">
+    <input id="kw" type="text" placeholder="Nhập số kw" class="form-control m-2">
   </div>
   <button class="btn btn-primary mx-4" onclick="calcu()">Tính tiền điện</button>
-  <div class="bg-gradient" id="output"></div>
+  <div class="alert alert-success" role="alert">
+    👉<span id="output"></span>
+  </div>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
